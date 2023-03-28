@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=dev && nodemon index.js"
+    "start": "node index.js",
+    "serve": "set NODE_ENV=dev && nodemon index.js"
   },
   "author": "Decha",
   "license": "ISC",
