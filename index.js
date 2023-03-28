@@ -5,7 +5,7 @@ const {logger} = require("./src/middlewares")
 const app = express();
 const cors = require('cors')
 const bp = require('body-parser')
-let port = process.env.PORT || 3000;
+let PORT = process.env.PORT || 3000;
 
 app.use(cors())
 app.use(bp.json())
@@ -28,6 +28,6 @@ app.use(rightHistoryRouter.router)
 
 require("./src/config/mongoose-conect")
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Example app listening at http://localhost:3000`)
   })
